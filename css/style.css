@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    color: #959595;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
+    width: 100%;
+    align-items: center;
+    height: max-content;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #E1F0DA;
+}
+
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+a img {
+    height: 70px;
+    width: 70px;
+}
+
+.social a img {
+    height: 30px;
+    width: 30px;
+    padding-top: 3px;
+}
+
+ul {
+    display: flex;
+    font-size: 18px;
+    padding-top: 10px;
+    gap: 70px;
+    list-style: none;
+}
+
+li a{
+    text-decoration: none;
+    align-items: center;
+}
+
+li a:hover {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    font-weight: 400;
+    color: #1cbbb4;
+}
+
+nav h1 {
+    font-size: 30px;
+}
+
+
+#active-nav {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    font-weight: 400;
+    color: #1cbbb4;
+}
+
+/* Footer */
+footer {
+    background-color: #1cbbb4;
+    padding-top: 4px;
+}
+  
+.con-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      background-color: #1E201E;
+      padding: 18px;
+ }
+  
+.support1 {
+      color: #E2DFD0;
+      font-size: 18px;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+  
+.con-footer2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px;
+    font-size: 15px;
+    color:#fff;
+    gap: 10px;
+}
+  
+span {
+    color: #ccc;
+}
+  
+.con-footer2 a, strong{
+    text-decoration: none;
+    color: #fff;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.social2_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.social2_wrapper h2 {
+    color: #E2DFD0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.social2{ 
+    display: flex;
+    gap: 30px;
+    margin: 0; 
+    padding: 0; 
+    list-style: none;
+}
+
+.social2 li a{
+    display: block; 
+    width: 39px; 
+    height: 39px; 
+    text-decoration: none; 
+    background-repeat: no-repeat;
+    transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -webkit-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out;
+}
+
+.social2 li a:hover{
+    background-position: bottom;
+}
+
+.social2 li.nav1 a{
+    background-image: url(../images/social_ic1.png);
+    border-radius: 5px;
+}
+
+.social2 li.nav3 a{
+    background-image: url(../images/social_ic3.png);
+    border-radius: 5px;
+}
+
+.f-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 205px;
+    gap: 20px;
+}
+
+.f-logo img {
+    width: 120px;
+    height: 120px;
+    border-radius: 2px;
+}
+
+.f-logo p {
+    text-align:justify;
+    color: #E2DFD0;
+}
+
+
+
+
+/* Guide */
+.guide-con {
+    display: flex;
+    gap: 10px;
+    font-size: 13px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.guide-con .g-active {
+    color: #1cbbb4;
+}
+
+/* Page Banner */
+.page-privacy .page_banner{
+    background: url(../images/privacy.jpg) center top no-repeat; 
+    background-size: cover;
+}
