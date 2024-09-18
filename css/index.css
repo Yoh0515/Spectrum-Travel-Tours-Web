@@ -2,7 +2,8 @@
 .carousel {
   display: flex;
   align-items: center;
-  padding: 5px;
+  justify-content: center;
+  width: 100%;
   }
 
   /* Certification */
@@ -20,56 +21,92 @@
   padding: 10px 0 0 0;
 }
 
- /* Media Query for Mobile Devices */
- @media (max-width: 480px) {
-  body {
 
-    nav {
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-    }
-    .nav-menu {
-      display: none;
-    }
-    .hamburger {
-      display: flex;
-      flex-direction: column;
-      margin: 0;
-      padding: 0;
-    }
-    .bar {
-      background-color: #1cbbb4;
-      margin: 3px;
-    }
-
-  }
+/* For Package */
+.package {
+  display: flex;
+  height: 700px;
+  align-items: center;
+  justify-content: center; 
+  margin: 60px 0px 60px 0px;
 }
 
-/* Media Query for low resolution  Tablets, Ipads */
-@media (min-width: 481px) and (max-width: 767px) {
-  body {
-      background-color: yellow;
-  }
+.gallery {
+  width: 90%;
 }
 
-/* Media Query for Tablets Ipads portrait mode */
-@media (min-width: 768px) and (max-width: 1024px) {
-  body {
-      background-color: blue;
-  }
+.gallery-cell {
+  width: 500px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
 }
 
-/* Media Query for Laptops and Desktops */
-@media (min-width: 1025px) and (max-width: 1280px) {
-  body {
-      background-color: green;
-  }
+
+.gallery-cell img {
+  height: 400px;
+  width: 500px;
+  margin-bottom: 20px;
 }
 
-/* Media Query for Large screens */
-@media (min-width: 1281px) {
-  body {
-      background-color: white;
-  }
+.gallery-cell h1 {
+  font-size: 26px;
+  padding-left: 50px;
+  color: #000;
+}
+
+.gallery-cell h1:hover {
+  color: #1cbbb4;
+  transform: scale(1.01);
+}
+
+.gallery-cell p {
+  padding-left: 50px;
+}
+
+.review {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.review h4 {
+  padding-bottom: 7px;
+}
+
+.review-con {
+  padding-left: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.review-con button {
+  padding: 10px 20px;
+  background-color: #1cbbb4;
+  border: none;
+  color: white;
+  margin-right: 50px;
+}
+
+.review-con button:hover {
+  transform: scale(1.1);
+}
+
+.star img {
+  width: 15px;
+  height: 15px;
+}
+
+.num-star {
+  font-size: 12px;
+}
+
+/* cell number */
+.gallery-cell:before {
+  display: block;
+  text-align: center;
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
 }
