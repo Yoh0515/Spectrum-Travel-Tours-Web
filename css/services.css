@@ -1,9 +1,9 @@
 .services_ {
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
-    margin: 40px;
+    height: 80vh;
+    margin-top: 50px;
 }
 
 .services-con-1 {
@@ -16,7 +16,7 @@
 .services-list{
     display: flex;
     margin-top: 40px;
-    gap: 60px;
+    gap: 90px;
 }
 
 .services-con-1 h1 {

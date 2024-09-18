@@ -1,4 +1,3 @@
-
 // For Carousel in Main Page
 var flkty = new Flickity( '.main-gallery', {
     cellAlign: 'left',
@@ -8,7 +7,6 @@ var flkty = new Flickity( '.main-gallery', {
 
 
   // Send Contact Form to Email
-
   function sendMessage() {
      // Initialize emailjs
      emailjs.init("19YZt0cTuvdX5zQfh");
@@ -94,9 +92,22 @@ var flkty = new Flickity( '.main-gallery', {
      return false; // Prevent default form submission
  }
  
- 
-  
-  const name = document.querySelector("#fname");
-  const email = document.querySelector("#email");
-  const subject = document.querySelector("#subject");
-  const message =  document.querySelector("#message");
+// FOR MEDIA QUARRIES
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
+
+const navLink = document.querySelectorAll(".nav-link");
+
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}

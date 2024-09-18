@@ -1,0 +1,49 @@
+.gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+    height: 60vh;
+    gap: 40px;
+}
+
+.card-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 400px;
+}
+
+.card-gallery:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.card-gallery img {
+    width: 345px;
+    height: 300px;
+}
+
+.card-gallery button {
+    width: 100px;
+    background-color: #1cbbb4;
+    border: none;
+    padding: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.card-gallery button:hover {
+    background-color: #48CFCB;
+    transform: scale(1.1);
+}
+
+.card-gallery h3 {
+    font-weight: bold;
+    color: black;
+    font-size: 25px;
+    padding: 5px;
+    text-transform: uppercase;
+}

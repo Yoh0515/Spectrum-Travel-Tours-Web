@@ -22,7 +22,6 @@ nav {
     border-bottom: 1px solid #E1F0DA;
 }
 
-
 .hamburger {
     display: none;
 }
@@ -72,9 +71,6 @@ li a:hover {
     color: #1cbbb4;
 }
 
-nav h1 {
-    font-size: 30px;
-}
 
 
 #active-nav {
@@ -96,6 +92,7 @@ footer {
       justify-content: space-around;
       background-color: #1E201E;
       padding: 18px;
+      width: 100%;  
  }
   
 .support1 {
@@ -201,6 +198,12 @@ span {
 
 .guide-con .g-active {
     color: #1cbbb4;
+}
+
+.guide-con a:hover {
+    color: #1cbbb4;
+    text-decoration: underline;
+    text-underline-offset: 5px;
 }
 
 /* Page Banner */
