@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/contact.css">
     <link rel="icon" type="image/x-icon" href="images/logo1.jfif">
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-    </script><script src="sweetalert2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="sweetalert2.min.js"></script>
     <link rel="stylesheet" href="sweetalert2.min.css">
 </head>
 <body>
@@ -142,7 +142,27 @@
           <a href="about.html">About Us</a>    
         </div>
     </footer>
-    <script src="./js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        // FOR MEDIA QUARRIES
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }
+    </script>
 </body>
 </html>

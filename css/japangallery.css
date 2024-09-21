@@ -64,7 +64,7 @@
   }
 
   .responsive-container-block.img-cont img:hover {
-    transform: scale(1.5);
+    transform: scale(1.1);
   }
 
   
@@ -90,12 +90,12 @@
   
   .album .img.img-big {
     height: 50%;
-    margin: 0 0 16px 0;
+    margin: 0 0 0px 0;
   }
   
   @media (max-width: 1024px) {
     .album .img {
-      margin: 0 0 18px 0;
+      margin: 0 0 0px 0;
     }
   }
   
